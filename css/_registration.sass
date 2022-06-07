@@ -1,0 +1,111 @@
+.reg
+    display: flex
+    justify-content: space-between
+    gap: 128px
+    margin-top: 64px
+    margin-bottom: 96px
+
+    &__left
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+
+    &__right
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+
+    &__label
+        font-weight: 300
+        font-size: 16px
+        line-height: 19px
+        color: $colorContent
+
+    &__input
+        box-sizing: border-box
+        width: 360px
+        height: 45px
+        font-weight: 300
+        font-size: 13px
+        line-height: 16px
+        color: #B1B1B1
+        border: 1px solid #A4A4A4
+        padding: 12px 16px
+        margin-top: 20px
+
+    &__sex
+        display: flex
+        align-items: center
+        margin-top: 31px
+        margin-bottom: 33px
+        font-weight: 300
+        font-size: 11px
+        line-height: 13px
+        color: #000000
+
+    &__radio-span
+        margin-left: 10px
+        margin-right: 20px
+
+    &__text-left
+        font-weight: 300
+        font-size: 13px
+        line-height: 16px
+        color: #B1B1B1
+        margin-top: 15px
+        max-width: 360px
+
+    &__button
+        margin-top: 39px
+        display: flex
+        align-items: center
+        font-size: 16px
+        line-height: 19px
+        color: #FFFFFF
+        background-color: $colorSelect
+        border: 1px solid $colorSelect
+        padding: 16px 24px 16px 24px
+        cursor: pointer
+        transition: color 0.5s ease
+        transition: background-color 0.5s ease
+
+    &__button:hover
+        color: $colorSelect
+        background-color: #FFFFFF
+
+    &__icon
+        margin-left: 20px
+
+    &__button .reg__icon path
+        transition: fill 0.5s ease
+
+    &__button:hover .reg__icon path
+        fill: $colorSelect
+
+    &__h3
+        font-weight: 300
+        font-size: 24px
+        line-height: 29px
+        color: #000000
+
+    &__text-right
+        font-weight: 300
+        font-size: 24px
+        line-height: 29px
+        color: #000000
+        margin-top: 22px
+        margin-bottom: 22px
+
+    &__ul
+        list-style-type: none
+
+    &__list
+        font-weight: 300
+        font-size: 24px
+        line-height: 29px
+        color: #000000
+        margin-bottom: 16px
+
+    &__icon-list
+        margin-right: 23px
+        margin-left: 0

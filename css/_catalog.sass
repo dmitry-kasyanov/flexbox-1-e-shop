@@ -1,0 +1,128 @@
+.breadcrumbs
+    height: 148px
+    background-color: #F8F3F4
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+    &__heading
+        font-size: 24px
+        line-height: 29px
+        color: $colorSelect
+
+    &__nav
+        display: flex
+        list-style-type: none
+
+    &__link
+        font-weight: 300
+        font-size: 14px
+        line-height: 17px
+        color: #636363
+        transition: color 0.5s ease
+        &:hover
+            color: $colorSelect
+
+    &__list
+        &:not(:last-child)::after
+            content: '/'
+            margin-left: 8px
+            margin-right: 8px
+        &:last-child a
+            font-weight: 700
+            color: $colorSelect
+
+.pagination
+    background-color: #FFFFFF
+    display: flex
+    justify-content: center
+    align-items: center
+    list-style-type: none
+    border: 1px solid #EBEBEB
+    border-radius: 5px
+    padding: 15px 16px 15px 16px
+
+    &__list
+        margin-left: 10px
+        margin-right: 10px
+
+    &__link
+        font-weight: 300
+        font-size: 16px
+        line-height: 19px
+        color: #636363
+        transition: color 0.5s ease
+        &_select
+            color: #EF5B70
+        &:hover
+            color: #EF5B70
+        & path
+            transition: fill 0.5s ease
+        &:hover path
+            fill: #EF5B70
+.filter-sort
+    padding-top: 51px
+    padding-bottom: 64px
+    display: flex
+
+.sort
+    &_top
+        padding-top: 13px
+
+.filter
+    margin-right: 30px
+    position: relative
+    width: 360px
+    &__summary
+        font-weight: 600
+        font-size: 14px
+        line-height: 17px
+        color: #000000
+        padding-right: 11px
+        cursor: pointer
+
+    &__details
+        padding: 13px 16px 16px
+        box-sizing: border-box
+        position: absolute
+        z-index: 1
+        width: 100%
+        &[open]
+            background: #FFFFFF
+            box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+            & .filter__summary
+                color: $colorSelect
+            & path
+                fill: $colorSelect
+
+    &__details-in
+        margin-top: 16px
+        &[open] .filter__heading-in
+            color: $colorSelect
+
+    &__summary-in
+        border-left: 5px solid $colorSelect
+
+    &__heading-in
+        padding: 8px 0 11px 11px
+        font-size: 14px
+        line-height: 17px
+        display: block
+        color: #6F6E6E
+        border-bottom: 1px solid #EBEBEB
+        cursor: pointer
+
+    &__ul
+        list-style-type: none
+        padding-left: 17px
+        padding-top: 24px
+        & li:not(:last-child)
+            margin-bottom: 11px
+
+        & li:last-child
+            margin-bottom: 24px
+
+        & a
+            font-size: 14px
+            line-height: 17px
+            color: #6F6E6E

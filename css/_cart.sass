@@ -1,0 +1,181 @@
+.cart
+    display: flex
+    justify-content: space-between
+    margin-top: 96px
+    margin-bottom: 128px
+
+    &__left
+        display: flex
+        flex-direction: column
+        align-items: center
+
+    &__right
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+
+    &__item
+        max-width: 652px
+        position: relative
+        display: flex
+        justify-content: center
+        box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13)
+        &:not(:first-child)
+            margin-top: 40px
+
+    &__close
+        position: absolute
+        z-index: 1
+        top: 28px
+        right: 22px
+        cursor: pointer
+
+    &__picture
+        display: flex
+        max-width: 262px
+
+    &__img
+        max-width: 100%
+
+    &__info
+        padding: 22px 97px 62px 32px
+
+    &__heading
+        font-weight: normal
+        font-size: 24px
+        line-height: 29px
+        color: $colorContent
+        max-width: 262px
+        margin-bottom: 42px
+
+    &__text
+        font-size: 22px
+        line-height: 26px
+        color: #575757
+        margin-bottom: 6px
+
+    &__price
+        color: $colorSelect
+        &::before
+            content: '$'
+
+    &__label
+        font-size: 22px
+        line-height: 26px
+        color: #575757
+        margin-right: 24px
+
+    &__input
+        box-sizing: border-box
+        width: 44px
+        height: 25px
+        color: #656565
+        border: 1px solid #EAEAEA
+        font-size: 18px
+        line-height: 22px
+        text-align: center
+        padding: 2px
+
+    &__buttons
+        display: flex
+        gap: 185px
+        margin-top: 72px
+
+    &__button
+        font-weight: 300
+        font-size: 14px
+        line-height: 17px
+        color: #000000
+        border: 1px solid #A4A4A4
+        padding: 16px 40px
+        cursor: pointer
+        transition: background-color 0.5s ease
+
+    &__button:hover
+        color: #FFFFFF
+        background-color: $colorSelect
+        border: 1px solid #FF6A6A
+
+    &__address
+        font-weight: 300
+        font-size: 16px
+        line-height: 19px
+        color: $colorContent
+        margin-bottom: 20px
+
+    &__input-text
+        box-sizing: border-box
+        width: 360px
+        height: 45px
+        border: 1px solid #A4A4A4
+        padding: 13px 16px
+        font-weight: 300
+        font-size: 13px
+        line-height: 16px
+        color: #B1B1B1
+        margin-bottom: 20px
+
+    &__button_small
+        font-size: 11px
+        line-height: 13px
+        color: #4A4A4A
+        border: 1px solid #A4A4A4
+        padding: 10px 14px
+        cursor: pointer
+        margin-top: 4px
+        margin-bottom: 58px
+
+    &__button_small:hover
+        color: #FFFFFF
+        background-color: $colorSelect
+        border: 1px solid #FF6A6A
+
+    &__total
+        padding: 40px 44px 60px 44px
+        background: #F5F3F3
+
+    &__sub-total
+        font-size: 11px
+        line-height: 13px
+        color: #4A4A4A
+        text-align: right
+        margin-bottom: 12px
+
+    &__price_st
+        margin-left: 20px
+        &::before
+            content: '$'
+    &__price_gt
+        margin-left: 20px
+        color: $colorSelect
+        &::before
+            content: '$'
+
+    &__grand-total
+        font-weight: 300
+        font-size: 16px
+        line-height: 19px
+        color: $colorContent
+        text-align: right
+
+    &__line
+        width: 275px
+        height: 1px
+        background: #E2E2E2
+        margin-top: 21px
+        margin-bottom: 32px
+
+    &__button-buy
+        color: #FFFFFF
+        background-color: $colorSelect
+        border: none
+        padding: 16px 42px
+        font-weight: 300
+        font-size: 16px
+        line-height: 19px
+        cursor: pointer
+        margin-bottom: 40px
+        transition: background-color 0.5s ease
+
+    &__button-buy:hover
+        background-color: $colorSelect - #111111

@@ -1,0 +1,415 @@
+@import vars
+
+*
+    margin: 0
+    padding: 0
+
+body
+    font-family: 'Lato', sans-serif
+
+a
+    text-decoration: none
+
+summary
+    display: block
+    outline: none
+
+    &::-webkit-details-marker
+        display: none
+
+.wrapper
+    min-height: 100vh
+    display: flex
+    flex-direction: column
+
+.top
+    flex-grow: 1
+
+.center
+    padding-left: calc(50% - 570px)
+    padding-right: calc(50% - 570px)
+
+.container-mini
+    margin-top: 48px
+    margin-bottom: 96px
+    display: flex
+    justify-content: center
+
+.header
+    background-color: $colorContent
+    height: 75px
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+    &__search
+        margin-left: 41px
+
+    &__icons:not(:last-child)
+        margin-right: 33px
+
+    &__search path,
+
+    &__icons path
+        transition: fill 0.5s ease
+
+    &__search:hover path,
+
+    &__icons:hover path
+        fill: $colorSelect
+
+.promo
+    background-color: #F1E4E6
+    display: flex
+    padding-left: calc(50% - 800px)
+    padding-right: calc(50% - 800px)
+
+    &__img
+        width: 50%
+
+    &__photo
+        width: 100%
+
+    &__h1
+        font-weight: 900
+        font-size: 48px
+        line-height: 58px
+        color: $colorContent
+
+    &__h2
+        font-weight: 400
+        font-size: 32px
+        line-height: 38px
+        color: $colorContent
+
+    &__h2_select
+        color: $colorSelect
+
+    &__text
+        padding-top: 16%
+
+    &__content
+        border-left: 12px solid $colorSelect
+        padding-left: 16px
+
+.sale
+    padding-top: 64px
+    padding-bottom: 96px
+
+    &__top
+        display: flex
+        gap: 30px
+
+    &__item
+        position: relative
+        height: 260px
+        flex-grow: 1
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+
+    &__img
+        max-width: 100%
+
+    &__info
+        position: absolute
+        z-index: 1
+
+    &__bottom
+        height: 180px
+        margin-top: 30px
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+
+    &__text
+        font-weight: normal
+        font-size: 16px
+        line-height: 19px
+        text-align: center
+        color: #FFFFFF
+
+    &__heading
+        font-weight: bold
+        font-size: 24px
+        line-height: 29px
+        text-align: center
+        color: $colorSelect
+
+.products
+    margin-bottom: 96px
+
+    &__h2
+        font-size: 30px
+        line-height: 36px
+        color: $colorContent
+        text-align: center
+        margin-bottom: 6px
+
+    &__description
+        font-size: 14px
+        line-height: 17px
+        color: #9F9F9F
+        text-align: center
+        margin-bottom: 48px
+
+    &__items
+        display: flex
+        justify-content: center
+        flex-wrap: wrap
+        gap: 30px
+
+    &__card
+        width: 100%
+        max-width: 360px
+
+    &__picture
+        position: relative
+        width: 100%
+        display: flex
+
+    &__img
+        max-width: 100%
+
+    &__hover
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background-color: rgba(58, 56, 56, 0.86)
+        display: none
+        align-items: center
+        justify-content: center
+
+    &__picture:hover .products__hover
+        display: flex
+
+    &__info
+        background-color: #F8F8F8
+        padding: 25px 16px 20px 16px
+
+    &__heading
+        font-size: 13px
+        line-height: 16px
+        color: #000000
+
+    &__text
+        font-weight: 300
+        font-size: 14px
+        line-height: 17px
+        color: #5D5D5D
+        margin-top: 12px
+
+    &__price
+        font-size: 16px
+        line-height: 19px
+        color: $colorSelect
+        margin-top: 18px
+        &::before
+            content: '$'
+
+    &__picture:hover .products__add
+        display: flex
+
+    &__icon
+        margin-right: 12px
+
+    &__add
+        position: absolute
+        top: 188px
+        left: 111px
+        display: none
+        justify-content: center
+        align-items: center
+        border: 1px solid #FFFFFF
+        width: 139px
+        height: 44px
+        font-size: 14px
+        line-height: 17px
+        color: #FFFFFF
+        transition: color 0.5s ease
+        transition: background-color 0.5s ease
+
+    &__add:hover
+        color: #000000
+        background-color: #FFFFFF
+
+    &__add .products__icon path
+        transition: fill 0.5s ease
+
+    &__add:hover .products__icon path
+        fill: #000000
+
+    &__button
+        font-size: 16px
+        line-height: 19px
+        color: #F26376
+        background-color: #FFFFFF
+        border: 1px solid #FF6A6A
+        padding: 14px 38px 14px 38px
+        transition: color 0.5s ease
+        transition: background-color 0.5s ease
+
+    &__button:hover
+        color: #FFFFFF
+        background-color: $colorSelect
+
+.advantages
+    background-color: $colorContent
+    display: flex
+    justify-content: center
+    gap: 30px
+    padding-top: 104px
+    padding-bottom: 104px
+
+    &__item
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: flex-end
+
+    &__heading
+        font-size: 20px
+        line-height: 24px
+        color: #FBFBFB
+        margin-top: 28px
+
+    &__text
+        font-weight: 300
+        font-size: 14px
+        line-height: 17px
+        text-align: center
+        color: #FBFBFB
+        max-width: 360px
+        margin-top: 16px
+
+.subscribe
+    background-image: url("../img/sub/sub_back.jpg")
+    background-size: cover
+    background-position: center bottom
+    display: flex
+    justify-content: space-between
+    padding-top: 97px
+    padding-bottom: 126px
+
+    &__left
+        display: flex
+        flex-direction: column
+        align-items: center
+
+    &__right
+        @extend .subscribe__left
+        padding-top: 53px
+
+    &__profile
+        display: flex
+        flex-direction: column
+        align-items: center
+
+    &__photo
+        width: 96px
+        height: 96px
+        margin-bottom: 30px
+
+    &__quote
+        font-size: 20px
+        line-height: 24px
+        text-align: center
+        color: $colorContent
+        max-width: 360px
+
+    &__heading
+        font-weight: bold
+        font-size: 24px
+        line-height: 167%
+        text-align: center
+        color: $colorContent
+
+    &__text
+        font-size: 18px
+        line-height: 30px
+        text-align: center
+        color: $colorContent
+
+    &__form
+        margin-top: 32px
+        display: flex
+        align-items: center
+        justify-content: center
+
+    &__input
+        width: 256px
+        height: 49px
+        color: $colorContent
+        background-color: #E1E1E1
+        border-radius: 25px 0 0 25px
+        border: none
+        opacity: 0.67
+        font-size: 14px
+        line-height: 17px
+        padding: 0 22px
+
+    &__button
+        width: 100px
+        height: 49px
+        border: none
+        border-radius: 0 25px 25px 0
+        color: #FFFFFF
+        background-color: $colorSelect
+        font-size: 14px
+        line-height: 17px
+        cursor: pointer
+        transition: background-color 0.5s ease
+
+    &__button:hover
+        background-color: $colorSelect - #111111
+
+.footer
+    background-color: $colorContent
+    height: 79px
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+    &__copyright
+        font-size: 16px
+        line-height: 19px
+        color: #FBFBFB
+
+    &__right
+        display: flex
+        align-items: center
+        gap: 7px
+
+    &__icons
+        width: 32px
+        height: 32px
+        color: #000000
+        background-color: #FFFFFF
+        display: flex
+        align-items: center
+        justify-content: center
+        transition: color 0.5s ease
+        transition: background-color 0.5s ease
+
+    &__icons:hover
+        color: #FFFFFF
+        background-color: $colorSelect
+
+.sort
+    display: flex
+    &__summary
+        font-size: 14px
+        line-height: 17px
+        color: #6F6E6E
+    &__icon
+        margin-left: 10px
+        margin-right: 28px
+
+@import catalog
+@import product
+@import cart
+@import registration
